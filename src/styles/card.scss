@@ -15,11 +15,6 @@
   &:hover {
     transform: scale(1.2);
     z-index: 10;
-
-    &__title {
-      color: #34568b;
-    }
-
   }
 
   &__image {
@@ -32,7 +27,7 @@
   &__title {
     width: 166px;
     height: 36px;
-    margin: 34px 3 7px;
+    margin: 34px 3px 7px;
 
     font-size: 12px;
     font-weight: 500;
@@ -42,8 +37,11 @@
     letter-spacing: -0.1px;
     transition: color 300ms ease;
 
-  }
+    &:hover {
+    color: #34568b;
+    }
 
+  }
 
   &__code {
     margin: 0 3px;
