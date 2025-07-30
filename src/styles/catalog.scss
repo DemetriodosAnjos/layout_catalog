@@ -1,19 +1,24 @@
-// src/styles/grid.scss
+
 
 .catalog__grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); // 4 colunas iguais
-  gap: 24px; // espaço entre colunas e linhas
-  padding: 40px;
+  grid-template-columns: 1fr;
+  gap: $gap-vertical $gap-horizontal;
+  justify-content: center;
+  align-items: start;
+  padding: 50px 40px;
 
-  // Responsividade: para telas menores, diminui o número de colunas
-  @media (max-width: 1024px) {
-    grid-template-columns: repeat(2, 1fr); // 2 colunas em telas médias
-    padding: 30px;
+  @media (min-width: 488px) {
+    grid-template-columns: repeat(2, minmax($card-width, 1fr));
   }
 
-  @media (max-width: 480px) {
-    grid-template-columns: 1fr; // 1 coluna em telas pequenas
-    padding: 20px;
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, minmax($card-width, 1fr));
+    padding: 40px 30px;
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(4, minmax($card-width, 1fr));
+    padding: 50px 40px;
   }
 }
