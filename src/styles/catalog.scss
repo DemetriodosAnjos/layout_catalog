@@ -1,10 +1,22 @@
+@import 'variables';
+
 .catalog__grid {
-  padding: 50px 40px;
   display: grid;
-  grid-template-columns: repeat(4, 200px);
-  gap: 48px 46px;
+  grid-template-columns: repeat(1, $card-width);
+  gap: $spacing-gap-vertical $spacing-gap-horizontal;
   justify-content: center;
   align-items: start;
+  padding: 50px 40px;
+
+  @media (min-width: 488px) {
+    grid-template-columns: repeat(2, $card-width);
+  }
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, $card-width);
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(4, $card-width);
+  }
 }
-
-

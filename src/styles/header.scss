@@ -1,6 +1,5 @@
 header {
   padding: 0;
-
 }
 
 .header__container {
@@ -9,15 +8,13 @@ header {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  box-shadow:0 2px 4px rgba(0, 0, 0, 0.1) ;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   align-items: center;
   padding: 0 30px;
-
 }
 
 .header__nav {
   display: flex;
-
 }
 
 .header__logo-link {
@@ -40,7 +37,6 @@ header {
 
 .header__nav li {
   margin-right: 24px;
-
 }
 
 .header__nav li:last-child {
@@ -52,7 +48,9 @@ header {
   color: $color-nav-link;
   text-decoration: none;
   font-weight: 500;
-  transition: color 300ms ease, border-bottom 300ms ease;
+  transition:
+    color 300ms ease,
+    border-bottom 300ms ease;
 
   &:hover,
   &:focus {

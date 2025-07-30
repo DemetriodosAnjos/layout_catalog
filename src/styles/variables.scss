@@ -1,18 +1,23 @@
-// Cores
+$color-dark-blue: #001f3f;
 $color-nav-link: #060b35;
 $color-nav-link-hover: #00acdc;
-$button-hover: #00acdc;
-$color-card-title-hover: #34568b;
-$border-color: #fff;
-$text-color-blue-1: #060b35;
-$text-price: #616070;
+$text-price: #8d8d8d;
 $background-white: #fff;
 $button-color: #00acdc;
-
-
-// Tamanhos
+$button-hover: #fff;
+$button-text-hover: #00acdc;
+$button-border-hover: #00acdc;
+$card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+$spacing-xxxs: 2px;
+$spacing-xxs: 3px;
+$spacing-xs: 6px;
+$spacing-sm: 16px;
+$spacing-md: 20px;
+$spacing-lg: 30px;
+$spacing-xl: 40px;
+$spacing-xxl: 34px;
 $card-width: 200px;
-$gap-horizontal: 46px;
-$gap-vertical: 48px;
-$catalog-padding-vertical: 50px;
-$catalog-padding-horizontal: 40px;
+$card-border-thickness: 1px;
+$card-border-radius: 8px;
+$spacing-gap-vertical: 48px;
+$spacing-gap-horizontal: 46px;

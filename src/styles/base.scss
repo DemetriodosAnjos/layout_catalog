@@ -1,8 +1,11 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
@@ -10,6 +13,5 @@ html, body {
 body {
   font-family: Roboto, sans-serif;
   color: #333;
-  background-color: #fff;
+  background-color: $background-white;
 }
-
