@@ -10,11 +10,6 @@
   position: relative;
   box-shadow: $card-shadow;
 
-  &:hover {
-    transform: scale(1.2);
-    z-index: 10;
-  }
-
   &__image {
     border-radius: 4px;
     width: 160px;
@@ -32,8 +27,13 @@
     font-size: 12px;
     line-height: 18px;
     transition: color 300ms ease;
+  }
 
-    .card:hover & {
+  &:hover {
+    transform: scale(1.2);
+    z-index: 10;
+
+    &__title {
       color: #34568b;
     }
   }
