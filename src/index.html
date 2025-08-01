@@ -21,53 +21,36 @@
     />
   </head>
   <body>
-    <header class="header">
-      <div class="header__container">
-        <a
-          href="#"
-          class="header__logo-link"
-        >
+    <header>
+      <div class="header-container">
+        <div class="header-logo">
           <img
-            src="images/logo.png"
-            alt="Moyo Logo"
-            class="header__logo"
+            src="/src/images/logo.png"
+            alt="header-logo"
           />
-        </a>
-        <nav class="header__nav">
-          <ul>
-            <li>
-              <a
-                href="#"
-                class="header__nav-link is-active"
-              >
-                APPLE
-              </a>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li class="highlight">
+              <a href="#">APPLE</a>
+              <div class="underline"></div>
             </li>
-            <li>
-              <a
-                href="#"
-                class="header__nav-link"
-              >
-                SAMSUNG
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="header__nav-link"
-              >
-                SMARTPHONES
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="header__nav-link"
-                data-qa="nav-hover"
-              >
-                LAPTOP & COMPUTERS
-              </a>
-            </li>
+
+            <li><a href="#">SAMSUNG</a></li>
+            <li><a href="#">SMARTPHONES</a></li>
+            <li class="highlight"><a href="#">LAPTOPS & COMPUTERS</a></li>
+            <li><a href="#">GADGETS</a></li>
+            <li><a href="#">TABLETS</a></li>
+            <li><a href="#">PHOTO</a></li>
+            <li><a href="#">VIDEO</a></li>
+            <a
+              href="#"
+              data-qa="hover"
+            ></a>
+            <a
+              href="#"
+              class="is-active"
+            ></a>
           </ul>
         </nav>
       </div>

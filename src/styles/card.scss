@@ -2,7 +2,6 @@
 
 .card__title {
   letter-spacing: -0.1px;
-  color: $color-dark-blue;
   text-align: left;
   width: 166px;
   height: 36px;
@@ -10,13 +9,12 @@
   font-size: 12px;
   line-height: 18px;
   transition: color 300ms ease;
-
+  color: $color-card-title;
 }
 
 .card:hover .card__title {
   color: #34568b;
 }
-
 
 .card {
   background-color: $background-white;
