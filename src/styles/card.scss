@@ -11,11 +11,11 @@
   line-height: 18px;
   transition: color 300ms ease;
 
-  &:hover .card__title {
-  color: #34568b;
-}
 }
 
+.card:hover .card__title {
+  color: #34568b;
+}
 
 
 .card {
