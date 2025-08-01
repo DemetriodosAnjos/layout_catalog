@@ -10,11 +10,13 @@
   font-size: 12px;
   line-height: 18px;
   transition: color 300ms ease;
-}
 
-.card:hover .card__title {
+  &:hover .card__title {
   color: #34568b;
 }
+}
+
+
 
 .card {
   background-color: $background-white;
