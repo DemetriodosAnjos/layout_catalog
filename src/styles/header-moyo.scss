@@ -59,38 +59,13 @@ nav {
   &.is-active {
     color: $color-nav-link-hover;
     border-bottom: 2px solid $color-nav-link-hover;
+    padding: 20px;
   }
 }
 
 /* Destaque APPLE */
 .nav-links li.highlight a {
   color: #00acdc;
-}
-
-.nav-links li.highlight .underline {
-  position: absolute;
-  bottom: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #00acdc;
-  color: white;
-  font-size: 12px;
-  padding: 3px 24px;
-  border-radius: 10px;
-  white-space: nowrap;
-}
-
-.nav-links li.highlight2 .underline {
-  position: absolute;
-  bottom: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #00acdc;
-  color: white;
-  font-size: 12px;
-  padding: 3px 82px;
-  border-radius: 10px;
-  white-space: nowrap;
 }
 
 /* Media query para telas menores */
