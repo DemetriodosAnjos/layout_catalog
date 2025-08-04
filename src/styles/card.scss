@@ -20,6 +20,7 @@
     line-height: 18px;
     transition: color 300ms ease;
   }
+
   &:hover {
     color: $color-card-title;
     color: $color-nav-link-hover;
@@ -35,7 +36,7 @@
   }
 
   &__code {
-    color: #616070;
+    color:$text-price;
     margin: 0 3px;
     font-size: 10px;
   }
@@ -54,7 +55,7 @@
   }
 
   &__price-label {
-    color: #616070;
+    color: $text-price;
     margin-top: 18px;
     font-size: 12px;
   }
@@ -89,10 +90,13 @@
       color 300ms ease,
       border 300ms ease;
 
-    &:hover {
-      color: $color-nav-link-hover;
-      background-color: $button-hover;
-      border: solid, 1px, $button-color;
-    }
+
   }
+}
+
+.card:first-of-type .card__buy:hover {
+  color: $color-nav-link-hover;
+  background-color: $button-hover;
+  border: 1px solid $button-color;
+  cursor: pointer;
 }
