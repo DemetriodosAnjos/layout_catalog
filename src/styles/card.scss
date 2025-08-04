@@ -1,21 +1,5 @@
 @import 'variables';
 
-.card__title {
-  letter-spacing: -0.1px;
-  text-align: left;
-  width: 166px;
-  height: 36px;
-  margin: 50px 3px 7px;
-  font-size: 12px;
-  line-height: 18px;
-  transition: color 300ms ease;
-  color: $color-card-title;
-}
-
-.card:hover .card__title {
-  color: $color-nav-link-hover;
-}
-
 .card {
   background-color: $background-white;
   border: $card-border-thickness solid $background-white;
@@ -26,7 +10,19 @@
   position: relative;
   box-shadow: $card-shadow;
 
+  &__title {
+    letter-spacing: -0.1px;
+    text-align: left;
+    width: 166px;
+    height: 36px;
+    margin: 50px 3px 7px;
+    font-size: 12px;
+    line-height: 18px;
+    transition: color 300ms ease;
+  }
   &:hover {
+    color: $color-card-title;
+    color: $color-nav-link-hover;
     transform: scale(1.2);
     z-index: 10;
   }
@@ -94,9 +90,9 @@
       border 300ms ease;
 
     &:hover {
-      color: $button-color;
+      color: $color-nav-link-hover;
       background-color: $button-hover;
-      border: 1px solid $button-color;
+      border: solid, 1px, $button-color;
     }
   }
 }
